@@ -14,10 +14,10 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
   "esmodules": [
-    "./dist/template-svelte-esm.js"
+    "./dist/fvtt-change-is-good.js"
   ],
   "styles": [
-    "./dist/template-svelte-esm.css"
+    "./dist/fvtt-change-is-good.css"
   ],
   "languages": [
     {
