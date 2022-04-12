@@ -1,12 +1,11 @@
 {
   "name": "fvtt-change-is-good",
   "title": "Change is Good",
-  "description": "Provides a bare-bones Foundry module template repo to get set up with using the TyphonJS Runtime Library and Svelte with ES Modules.",
-  "author": "Michael Leahy (TyphonJS) - MLeahy#4299",
+  "description": "Change is Good and you should react to it, like updating your Spiritual Weapon's proficiency bonus to be equal to your caster's!",
+  "author": "Krig - Krigsmaskine#8165",
   "authors": [
     {
-      "name": "Michael Leahy (TyphonJS) - MLeahy#4299",
-      "url": "https://www.typhonjs.io"
+      "name": "Krig - Krigsmaskine#8165"
     }
   ],
   "readme": "https://github.com/Krigsmaskine/fvtt-change-is-good/blob/main/README.md",
