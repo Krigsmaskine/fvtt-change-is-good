@@ -17,14 +17,14 @@ game.modules.get("fvtt-change-is-good").api.CiGSyncProfActor2NPC(actorID, npcID)
 
 Fill actorID with the ID of your source actor, and npcID with the ID of your npc to be updated. The npc is now subscribed to the actor's proficiency and the next time the actor receives an update (can always change health back and forth to force it, until Krig codes it better™), the npc will change CR to match the proficiency bonus of the actor.
 
-### *Removing synchronizations*
+### *Removing synchronization*
 Accidentally tied your donkey to scale with your absent sorceror? Run this function, either through the console or a macro, to delete a specific pairing.
 ```js
-game.modules.get("fvtt-change-is-good").api.CiGDelSync();
+game.modules.get("fvtt-change-is-good").api.CiGDelSync(actorID, npcID);
 ```
 
 ### *Removing **ALL** synchronizations*
-Run this function, either through the console or a macro, to delete all sync jobs and effectively reset Change is Good.
+Run this function, either through the console or a macro, to delete all sync jobs and effectively reset Change is Good's settings with your world.
 ```js
 game.modules.get("fvtt-change-is-good").api.CiGDelSyncAll();
 ```
