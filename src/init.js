@@ -77,6 +77,17 @@ Hooks.once("ready", () => {
             api.CiGSyncProfActor2NPC(element.actorID, element.npcID);
             };
         },
+
+        CiGDelSync: async (actorID, npcID) => {
+            const syncJobs = game.settings.get('fvtt-change-is-good','sync-jobs');
+            let foundIndex = syncJobs.findIndex((entry) => entry.actorID === actorID && entry.npcID === npcID);
+            syncJobs.splice(foundIndex,1);
+            game.settings.set('fvtt-change-is-good','sync-jobs', syncJobs);
+        },
+
+        CiGDelSyncAll: () => {
+            game.settings.set('fvtt-change-is-good','sync-jobs', []);
+        },
         };
     
         Object.freeze(api);
