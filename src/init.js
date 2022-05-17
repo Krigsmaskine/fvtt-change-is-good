@@ -27,7 +27,6 @@ Hooks.once("ready", () => {
             let actorSource = await game.actors.get(actorID);
             let target = await game.actors.get(npcID);
             
-            ui.notifications.info(`Change is Good | Triggered ProfActor2Sync for the actor ${actorSource.name} and ${target.name}`);
             console.log(`Change is Good | Triggered ProfActor2Sync for the actor ${actorSource.name} and ${target.name}`);
     
             let newSettings = game.settings.get('fvtt-change-is-good','sync-jobs');
